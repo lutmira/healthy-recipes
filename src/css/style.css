@@ -1,0 +1,207 @@
+/* global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* scrollbar styles */
+.scroll-1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-1::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgb(67, 80, 85);
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* to create the parallax effect */
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner .hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .hamburger-menu i {
+  font-size: 26px;
+}
+
+.banner .hamburger-menu:hover {
+  background-color: #b1a170;
+  color: white;
+  cursor: pointer;
+}
+
+/* Recipes Section */
+.recipes {
+  background-color: #313131;
+  padding: 80px 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recipe-card {
+  position: relative;
+  width: 24%;
+  height: 600px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.recipe-card .img-box {
+  position: relative;
+}
+
+.recipe-card img {
+  width: 100%;
+}
+
+.recipe-card .time {
+  position: absolute;
+  top: 90px;
+  right: 110px;
+  background-color: #b1a170;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.recipe-card .content-box {
+  padding: 20px;
+}
+
+.recipe-card .btn-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.recipe-card .btn {
+  width: 80%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border: 1px solid #b1a170;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.recipe-card .btn:hover {
+  background-color: #b1a170;
+  color: white;
+}
+
+/* Background Section */
+.background-section {
+  position: relative;
+  height: 50vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+/* to create the parallax effect */
+.background-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-section .background-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.background-section .background-content p {
+  font-size: 15px;
+}
+
+/* Footer Section */
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
